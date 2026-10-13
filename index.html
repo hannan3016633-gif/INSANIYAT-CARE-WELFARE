@@ -468,23 +468,54 @@
             font-weight: 700;
         }
 
-        .donation-box .acc-num {
+        /* Hidden Account Number Overlay */
+        .acc-toggle-btn {
+            background: var(--accent);
+            color: var(--dark);
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 0.95rem;
+            cursor: pointer;
+            margin-top: 0.8rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .acc-toggle-btn:hover {
+            background: var(--accent-hover);
+            transform: scale(1.03);
+        }
+
+        .acc-details-display {
+            display: none;
+            margin-top: 1rem;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            border: 1px dashed var(--accent);
+            animation: fadeIn 0.4s ease-in-out forwards;
+        }
+
+        .acc-details-display .acc-num {
             font-size: 1.35rem;
             font-weight: 800;
             color: var(--accent);
-            background: rgba(0, 0, 0, 0.3);
-            padding: 0.6rem 1rem;
-            border-radius: 10px;
-            display: inline-block;
             letter-spacing: 1px;
-            margin-top: 0.5rem;
-            border: 1px dashed rgba(212, 175, 55, 0.5);
         }
 
-        .donation-box p {
-            font-size: 0.95rem;
+        .acc-details-display .acc-title {
+            font-size: 0.85rem;
             color: #cbd5e1;
-            margin-bottom: 0.5rem;
+            margin-top: 4px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .btn-donate-now {
@@ -845,26 +876,42 @@
             </div>
         </div>
 
-        <!-- Official Support & Donation Section -->
+        <!-- Official Support & Donation Section with Hidden Touch Reveal -->
         <div class="donation-section" id="donation-section">
             <h2 id="d-title"><i class="fa-solid fa-hand-holding-dollar"></i> Support Our Cause (عطیات و تعاوُن)</h2>
-            <p id="d-desc">Your small contribution can provide emergency blood, school books for poor students, and food for families in need. All donations are handled with 100% honesty and transparency.</p>
+            <p id="d-desc">Your small contribution can provide emergency blood, school books for poor students, and food for families in need. Touch below to view secure payment details.</p>
             
             <div class="donation-grid">
                 <!-- EasyPaisa Box -->
                 <div class="donation-box">
                     <i class="fa-solid fa-mobile-retro"></i>
                     <h4 id="d-box1-title">EasyPaisa Account</h4>
-                    <p id="d-box1-desc">Account Title: Founder Abdul Hannan</p>
-                    <div class="acc-num">03008613306</div>
+                    <p id="d-box1-desc">Click below to reveal EasyPaisa number</p>
+                    
+                    <button class="acc-toggle-btn" onclick="toggleAcc('easypaisa-info', this)">
+                        <i class="fa-solid fa-eye"></i> <span class="btn-lbl">Show EasyPaisa Account</span>
+                    </button>
+                    
+                    <div class="acc-details-display" id="easypaisa-info">
+                        <div class="acc-num">03008613306</div>
+                        <div class="acc-title">Title: Abdul Hannan</div>
+                    </div>
                 </div>
                 
                 <!-- HBL Bank Box -->
                 <div class="donation-box">
                     <i class="fa-solid fa-building-columns"></i>
                     <h4 id="d-box2-title">HBL Bank Account</h4>
-                    <p id="d-box2-desc">Habib Bank Limited (HBL)</p>
-                    <div class="acc-num">00005001749070</div>
+                    <p id="d-box2-desc">Click below to reveal HBL Bank details</p>
+                    
+                    <button class="acc-toggle-btn" onclick="toggleAcc('hbl-info', this)">
+                        <i class="fa-solid fa-eye"></i> <span class="btn-lbl">Show Bank Details</span>
+                    </button>
+                    
+                    <div class="acc-details-display" id="hbl-info">
+                        <div class="acc-num">00005001749070</div>
+                        <div class="acc-title">Habib Bank Limited (HBL)</div>
+                    </div>
                 </div>
             </div>
 
@@ -950,8 +997,26 @@
         <p>&copy; 2026 <strong>Insaniyat Care Foundation Welfare</strong>. Founded by <strong>Abdul Hannan</strong>. Dedicated to Serving Humanity.</p>
     </footer>
 
-    <!-- Urdu Language Switcher Script -->
+    <!-- Interactive Scripts for Toggle Language & Reveal Accounts -->
     <script>
+        // Toggle Account Number Visibility on Click/Touch
+        function toggleAcc(id, btnElement) {
+            const accBox = document.getElementById(id);
+            const btnLabel = btnElement.querySelector('.btn-lbl');
+            const btnIcon = btnElement.querySelector('i');
+
+            if (accBox.style.display === "block") {
+                accBox.style.display = "none";
+                btnLabel.innerText = btnLabel.innerText.replace("Hide", "Show").replace("چھپائیں", "دیکھیں");
+                btnIcon.className = "fa-solid fa-eye";
+            } else {
+                accBox.style.display = "block";
+                btnLabel.innerText = btnLabel.innerText.replace("Show", "Hide").replace("دیکھیں", "چھپائیں");
+                btnIcon.className = "fa-solid fa-eye-slash";
+            }
+        }
+
+        // Language Switcher (Urdu/English)
         let currentLang = 'en';
         function toggleLanguage() {
             if (currentLang === 'en') {
@@ -979,9 +1044,9 @@
                 document.getElementById('d-title').innerHTML = '<i class="fa-solid fa-hand-holding-dollar"></i> عطیات و مالی تعاون (Support Our Cause)';
                 document.getElementById('d-desc').innerText = "آپ کا چھوٹا سا تعاون ضرورت مند مریضوں کے لیے بلڈ، غریب طلباء کے لیے کتابیں اور راشن کا سبب بن سکتا ہے۔ تمام عطیات 100% امانت داری کے ساتھ مستحقین تک پہنچائے جاتے ہیں۔";
                 document.getElementById('d-box1-title').innerText = "ایزی پیسہ اکاؤنٹ";
-                document.getElementById('d-box1-desc').innerText = "عنوان: عبد الحنان (بانی)";
+                document.getElementById('d-box1-desc').innerText = "اکاؤنٹ تفصیلات دیکھنے کے لیے نیچے کلک کریں";
                 document.getElementById('d-box2-title').innerText = "ایچ بی ایل (HBL) بینک اکاؤنٹ";
-                document.getElementById('d-box2-desc').innerText = "حبیب بینک لمیٹڈ (HBL)";
+                document.getElementById('d-box2-desc').innerText = "بینک تفصیلات دیکھنے کے لیے نیچے کلک کریں";
                 document.getElementById('d-btn-text').innerText = "واٹس ایپ پر پیمنٹ کی رسید بھیجیں";
 
                 document.getElementById('lang-text').innerText = "English";
