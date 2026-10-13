@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY GOOGLE SEO META TAGS -->
+    <title>Insaniyat Care Foundation | Welfare Services & Emergency Aid by Abdul Hannan</title>
+    <meta name="title" content="Insaniyat Care Foundation | Welfare Services & Emergency Aid by Abdul Hannan">
+    <meta name="description" content="Insaniyat Care Foundation & Welfare Organization founded by Abdul Hannan. Providing emergency blood donor network, student education support, and ration aid in Shakargarh.">
+    <meta name="keywords" content="Insaniyat Care Foundation, Insaniyat Care Welfare, Abdul Hannan Welfare, Insaniyat Care Shakargarh, Emergency Blood Donation Pakistan, Student Book Aid, Welfare Foundation Pakistan">
+    <meta name="author" content="Abdul Hannan">
+    <meta name="robots" content="index, follow">
+
+    <!-- GOOGLE SEARCH CONSOLE VERIFICATION PLACEHOLDER -->
+    <meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_VERIFICATION_CODE" />
+
+    <!-- OPEN GRAPH / SOCIAL MEDIA META TAGS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://insaniyatcare.org/">
+    <meta property="og:title" content="Insaniyat Care Foundation | Serving Humanity with Dignity">
+    <meta property="og:description" content="Official website of Insaniyat Care Welfare Foundation founded by Abdul Hannan. Emergency blood donation, student aid, and ration support.">
+    <meta property="og:image" content="WhatsApp Image 2026-10-13 at 12.54.58 AM.jpeg">
+
+    <!-- STRUCTURED DATA (SCHEMA.ORG FOR GOOGLE RANKING) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Insaniyat Care Foundation",
+      "alternateName": "Insaniyat Care Welfare",
+      "url": "https://insaniyatcare.org/",
+      "logo": "WhatsApp Image 2026-10-13 at 12.54.58 AM.jpeg",
+      "founder": {
+        "@type": "Person",
+        "name": "Abdul Hannan"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+923216633602",
+        "contactType": "customer service",
+        "email": "hannan3016633@gmail.com"
+      },
+      "sameAs": [
+        "https://wa.me/923216633602"
+      ]
+    }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0b4d3c;
+            --primary-light: #126651;
+            --accent: #d4af37;
+            --accent-hover: #b89628;
+            --dark: #0f172a;
+            --slate: #334155;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 40px -15px rgba(11, 77, 60, 0.18);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* --- Header Navigation --- */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.1rem 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(11, 77, 60, 0.2);
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--slate);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .lang-btn {
+            background: var(--accent);
+            color: var(--dark);
+            border: none;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        .btn-nav {
+            background: var(--primary);
+            color: var(--white) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(11, 77, 60, 0.15);
+            transition: all 0.3s ease !important;
+        }
+
+        .btn-nav:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        /* --- Founder Hero Profile Section --- */
+        .profile-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #063227 100%);
+            color: var(--white);
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-img-box {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+            margin: 0 auto 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .profile-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-hero .org-subtitle {
+            color: var(--accent);
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            color: #d1d5db;
+            max-width: 750px;
+            margin: 0.8rem auto 0;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        /* --- Container Layout --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0.8rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* --- Islamic Quote Box --- */
+        .islamic-quote-box {
+            background: linear-gradient(135deg, #fdfbf7, #f7f3e9);
+            border-left: 6px solid var(--accent);
+            padding: 2rem 2.5rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .islamic-quote-box h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            font-weight: 800;
+        }
+
+        .islamic-quote-box p {
+            font-size: 1.15rem;
+            color: var(--slate);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        /* --- Purpose of Life Section --- */
+        .purpose-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .p-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .p-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .p-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+        }
+
+        .p-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .p-card p {
+            color: var(--slate);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* --- Welfare Initiatives Services Section --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background: rgba(11, 77, 60, 0.06);
+            color: var(--primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: var(--slate);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--slate);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-list i {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .card-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 0.9rem 1.5rem;
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .card-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        /* --- Donation Section --- */
+        .donation-section {
+            background: linear-gradient(135deg, #0b4d3c, #063227);
+            border-radius: 24px;
+            padding: 3.5rem;
+            color: var(--white);
+            margin-bottom: 5rem;
+            box-shadow: var(--shadow-hover);
+            text-align: center;
+        }
+
+        .donation-section h2 {
+            font-size: 2.3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .donation-section p {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            max-width: 750px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .donation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .donation-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid var(--accent);
+            border-radius: 18px;
+            padding: 2.2rem;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .donation-box i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .donation-box h4 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .donation-box .acc-num {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--accent);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.6rem 1rem;
+            border-radius: 10px;
+            display: inline-block;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+            border: 1px dashed rgba(212, 175, 55, 0.5);
+        }
+
+        .donation-box p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-donate-now {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #25D366;
+            color: white;
+            font-weight: 800;
+            font-size: 1.1rem;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-donate-now:hover {
+            background: #20bd5a;
+            transform: translateY(-3px);
+        }
+
+        /* --- Quick Contact Section --- */
+        .quick-action-section {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 3.5rem;
+            margin-bottom: 5rem;
+            box-shadow: var(--shadow);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .action-info h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .action-info p {
+            color: var(--slate);
+            font-size: 1.05rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .contact-pills {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .pill-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 1rem 1.2rem;
+            background: var(--light-bg);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .pill-item:hover {
+            background: rgba(11, 77, 60, 0.05);
+            transform: translateX(5px);
+        }
+
+        .pill-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .pill-icon.wa { color: #25D366; }
+        .pill-icon.mail { color: #ea4335; }
+
+        .direct-form-card {
+            background: linear-gradient(145deg, #0b4d3c, #073529);
+            padding: 2.5rem;
+            border-radius: 20px;
+            color: var(--white);
+            box-shadow: 0 15px 35px rgba(11, 77, 60, 0.2);
+        }
+
+        .direct-form-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent);
+        }
+
+        .direct-form-card p {
+            font-size: 0.95rem;
+            color: #d1d5db;
+            margin-bottom: 1.8rem;
+        }
+
+        .form-btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn-wa-large {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.25);
+        }
+
+        .btn-wa-large:hover {
+            background: #20bd5a;
+            transform: translateY(-2px);
+        }
+
+        .btn-email-large {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-email-large:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* --- Sitemap Section --- */
+        .sitemap-section {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+        }
+
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .sitemap-col h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .sitemap-col ul {
+            list-style: none;
+        }
+
+        .sitemap-col a {
+            text-decoration: none;
+            color: var(--slate);
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 0.6rem;
+            transition: all 0.3s ease;
+        }
+
+        .sitemap-col a:hover {
+            color: var(--primary);
+            padding-left: 4px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--dark);
+            color: #94a3b8;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        footer strong {
+            color: var(--white);
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 900px) {
+            .quick-action-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .profile-hero h1 {
+                font-size: 2.2rem;
+            }
+            .services-grid, .purpose-cards, .donation-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#founder-section" class="logo" title="Insaniyat Care Foundation Welfare Organization">
+                <div class="logo-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <div class="logo-text">Insaniyat <span>Care</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#founder-section" id="nav-founder">Founder Profile</a></li>
+                    <li><a href="#purpose-section" id="nav-purpose">Purpose of Life</a></li>
+                    <li><a href="#services-section" id="nav-services">Welfare Initiatives</a></li>
+                    <li><a href="#donation-section" id="nav-donate" style="color:var(--accent); font-weight:700;"><i class="fa-solid fa-heart"></i> Donate</a></li>
+                    <li><a href="#contact-section" class="btn-nav" id="nav-contact"><i class="fa-brands fa-whatsapp"></i> Contact</a></li>
+                    <li>
+                        <button class="lang-btn" onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> <span id="lang-text">اردو</span></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Founder Hero Profile Section -->
+    <section class="profile-hero" id="founder-section">
+        <div class="profile-img-box">
+            <!-- Image with Lazy Loading & SEO Alt Tag -->
+            <img src="WhatsApp Image 2026-10-13 at 12.54.58 AM.jpeg" alt="Abdul Hannan Founder Insaniyat Care Foundation Welfare" loading="lazy" width="180" height="180">
+        </div>
+        <h1>ABDUL HANNAN</h1>
+        <div class="org-subtitle">Founder - Insaniyat Care Foundation Welfare</div>
+        <p class="tagline" id="bio-text">Student of Business Administration. Passionate about social welfare, community empowerment, and building transparent solutions to serve humanity.</p>
+    </section>
+
+    <div class="container">
+
+        <!-- Islamic Quote Box -->
+        <div class="islamic-quote-box">
+            <h3 id="hadith-title"><i class="fa-solid fa-quote-left"></i> فرمانِ نبوی ﷺ</h3>
+            <p id="hadith-text">"تم میں سے بہترین شخص وہ ہے جو لوگوں کو نفع پہنچائے۔" (سلسلۃ الاحادیث الصحیحہ)</p>
+        </div>
+
+        <!-- Purpose of Life Section -->
+        <div id="purpose-section">
+            <h2 class="section-title" id="purpose-heading">Purpose of Life (مقصدِ حیات)</h2>
+            <div class="purpose-cards">
+                <div class="p-card">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                    <h3 id="p1-title">1. Serving Humanity (خدمتِ خلق)</h3>
+                    <p id="p1-desc">Primary focus on helping vulnerable people, providing emergency blood access, education support, and ration distribution with maximum dignity.</p>
+                </div>
+                <div class="p-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3 id="p2-title">2. Ethical Leadership</h3>
+                    <p id="p2-desc">Combining modern management skills with strong ethical values to lead social empowerment projects transparently.</p>
+                </div>
+                <div class="p-card">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3 id="p3-title">3. Community Action</h3>
+                    <p id="p3-desc">Building an active network of local volunteers and youth to solve daily community problems collectively.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Welfare Initiatives -->
+        <div id="services-section">
+            <h2 class="section-title" id="services-heading">Our Welfare Initiatives</h2>
+            <div class="services-grid">
+                
+                <!-- Service 1: Blood Donation Pool -->
+                <div class="service-card">
+                    <div>
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-droplet" style="color: #e11d48;"></i>
+                        </div>
+                        <h3 id="s1-title">Emergency Blood Directory</h3>
+                        <p id="s1-desc">Connecting patients in urgent need with local voluntary blood donors rapidly and transparently.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Immediate Emergency Alerts</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Verified Local Donor Contacts</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Free Community Service</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/923216633602?text=Hello%20Abdul%20Hannan,%20I%20need%20urgent%20Blood%20Donation%20assistance." target="_blank" class="card-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Request Blood Help
+                    </a>
+                </div>
+
+                <!-- Service 2: Education Support -->
+                <div class="service-card">
+                    <div>
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                        </div>
+                        <h3 id="s2-title">Student & Education Aid</h3>
+                        <p id="s2-desc">Empowering deserving students with course books, study materials, and educational guidance.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Used Book Donation Drive</li>
+                            <li><i class="fa-solid fa-circle-check"></i> School & College Uniform Aid</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Student Mentorship</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/923216633602?text=Hello%20Abdul%20Hannan,%20I%20want%20to%20apply%20or%20contribute%20to%20Student%20Education%20Aid." target="_blank" class="card-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Apply / Donate Books
+                    </a>
+                </div>
+
+                <!-- Service 3: Ration Aid -->
+                <div class="service-card">
+                    <div>
+                        <div class="card-icon-wrapper">
+                            <i class="fa-solid fa-box-tissue"></i>
+                        </div>
+                        <h3 id="s3-title">Ration & Community Support</h3>
+                        <p id="s3-desc">Providing food packages and immediate assistance to low-income families with complete dignity.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Transparent Verification</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Essential Monthly Food Packs</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Local Disaster Aid</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/923216633602?text=Hello%20Abdul%20Hannan,%20I%20want%20to%20know%20more%20about%20Community%20Ration%20Support." target="_blank" class="card-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Support a Family
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Official Support & Donation Section -->
+        <div class="donation-section" id="donation-section">
+            <h2 id="d-title"><i class="fa-solid fa-hand-holding-dollar"></i> Support Our Cause (عطیات و تعاوُن)</h2>
+            <p id="d-desc">Your small contribution can provide emergency blood, school books for poor students, and food for families in need. All donations are handled with 100% honesty and transparency.</p>
+            
+            <div class="donation-grid">
+                <!-- EasyPaisa Box -->
+                <div class="donation-box">
+                    <i class="fa-solid fa-mobile-retro"></i>
+                    <h4 id="d-box1-title">EasyPaisa Account</h4>
+                    <p id="d-box1-desc">Account Title: Founder Abdul Hannan</p>
+                    <div class="acc-num">03008613306</div>
+                </div>
+                
+                <!-- HBL Bank Box -->
+                <div class="donation-box">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h4 id="d-box2-title">HBL Bank Account</h4>
+                    <p id="d-box2-desc">Habib Bank Limited (HBL)</p>
+                    <div class="acc-num">00005001749070</div>
+                </div>
+            </div>
+
+            <a href="https://wa.me/923216633602?text=Hello%20Abdul%20Hannan,%20I%20have%20sent%20a%20donation%20or%20need%20account%20confirmation." target="_blank" class="btn-donate-now" id="d-btn">
+                <i class="fa-brands fa-whatsapp"></i> <span id="d-btn-text">Send Payment Receipt on WhatsApp</span>
+            </a>
+        </div>
+
+        <!-- Quick Action / Contact Section -->
+        <div class="quick-action-section" id="contact-section">
+            <div class="action-info">
+                <h2>Need Direct Assistance or Want to Join?</h2>
+                <p>Insaniyat Care Foundation operates with 100% commitment and personal accountability. Reach out directly to discuss welfare causes or volunteer opportunities.</p>
+                
+                <div class="contact-pills">
+                    <a href="https://wa.me/923216633602" target="_blank" class="pill-item">
+                        <div class="pill-icon wa"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <div style="font-size:0.8rem; color:#64748b;">Direct WhatsApp</div>
+                            <div>+92 321 6633602</div>
+                        </div>
+                    </a>
+                    <a href="mailto:hannan3016633@gmail.com" class="pill-item">
+                        <div class="pill-icon mail"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <div style="font-size:0.8rem; color:#64748b;">Email Address</div>
+                            <div>hannan3016633@gmail.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="direct-form-card">
+                <h3>Get in Touch Directly</h3>
+                <p>Click below to open a direct message with Abdul Hannan regarding any community welfare inquiry.</p>
+                
+                <div class="form-btn-group">
+                    <a href="https://wa.me/923216633602?text=Hello%20Abdul%20Hannan,%20I%20am%20reaching%20out%20regarding%20Insaniyat%20Care%20Foundation." target="_blank" class="btn-wa-large">
+                        <i class="fa-brands fa-whatsapp"></i> Open WhatsApp Chat
+                    </a>
+                    <a href="mailto:hannan3016633@gmail.com" class="btn-email-large">
+                        <i class="fa-solid fa-paper-plane"></i> Send an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sitemap Section -->
+        <div class="sitemap-section">
+            <h3 style="color: var(--primary);" id="sitemap-title">Website Sitemap (سائٹ میپ)</h3>
+            <div class="sitemap-grid">
+                <div class="sitemap-col">
+                    <h4 id="sm-pages">Main Navigation</h4>
+                    <ul>
+                        <li><a href="#founder-section">Founder Profile</a></li>
+                        <li><a href="#purpose-section">Purpose of Life</a></li>
+                        <li><a href="#services-section">Welfare Initiatives</a></li>
+                        <li><a href="#donation-section">Donations & Support</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <h4 id="sm-services">Welfare Services</h4>
+                    <ul>
+                        <li><a href="#services-section">Emergency Blood Directory</a></li>
+                        <li><a href="#services-section">Student & Book Aid</a></li>
+                        <li><a href="#services-section">Ration Support</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <h4 id="sm-contact">Contact Details</h4>
+                    <ul>
+                        <li><a href="https://wa.me/923216633602" target="_blank">WhatsApp: +92 321 6633602</a></li>
+                        <li><a href="mailto:hannan3016633@gmail.com">Email: hannan3016633@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <strong>Insaniyat Care Foundation Welfare</strong>. Founded by <strong>Abdul Hannan</strong>. Dedicated to Serving Humanity.</p>
+    </footer>
+
+    <!-- Urdu Language Switcher Script -->
+    <script>
+        let currentLang = 'en';
+        function toggleLanguage() {
+            if (currentLang === 'en') {
+                document.getElementById('bio-text').innerText = "بزنس ایڈمنسٹریشن کا طالب علم۔ انسانیت کی خدمت، کمیونٹی کی بہتری اور فلاحی کاموں کے لیے پرعزم۔";
+                document.getElementById('hadith-title').innerHTML = '<i class="fa-solid fa-quote-left"></i> فرمانِ نبوی ﷺ';
+                document.getElementById('hadith-text').innerText = '"تم میں سے بہترین شخص وہ ہے جو لوگوں کو نفع پہنچائے۔"';
+                
+                document.getElementById('purpose-heading').innerText = "مقصدِ حیات";
+                document.getElementById('p1-title').innerText = "1. خدمتِ خلق (Serving Humanity)";
+                document.getElementById('p1-desc').innerText = "ضرورت مند لوگوں کی مدد، ایمرجنسی بلڈ کی فراہمی، تعلیمی تعاون اور راشن کی عزّت کے ساتھ تقسیم۔";
+                document.getElementById('p2-title').innerText = "2. بااصول قیادت";
+                document.getElementById('p2-desc').innerText = "جدید بزنس مینجمنٹ اسکلز اور اخلاقی اصولوں کو ملا کر فلاحی پروجیکٹس کی قیادت۔";
+                document.getElementById('p3-title').innerText = "3. کمیونٹی ایکشن";
+                document.getElementById('p3-desc').innerText = "مقامی سٹوڈنٹس اور نوجواوں کا نیٹ ورک بنا کر معاشرتی مسائل کا حل۔";
+                
+                document.getElementById('services-heading').innerText = "ہماری فلاحی خدمات";
+                document.getElementById('s1-title').innerText = "ایمرجنسی بلڈ ڈونیشن پول";
+                document.getElementById('s1-desc').innerText = "شکر گڑھ اور گردونواح میں ایمرجنسی میں خون کی فوری فراہمی۔";
+                document.getElementById('s2-title').innerText = "سٹوڈنٹ و بک سپورٹ";
+                document.getElementById('s2-desc').innerText = "ضرورت مند طالب علموں کے لیے کتابوں اور تعلیمی سامان کا بندوبست۔";
+                document.getElementById('s3-title').innerText = "راشن و ایمرجنسی امداد";
+                document.getElementById('s3-desc').innerText = "مستحق خاندانوں کی عزتِ نفس کا خیال رکھتے ہوئے راشن کی فراہمی۔";
+
+                // Donation section translation
+                document.getElementById('d-title').innerHTML = '<i class="fa-solid fa-hand-holding-dollar"></i> عطیات و مالی تعاون (Support Our Cause)';
+                document.getElementById('d-desc').innerText = "آپ کا چھوٹا سا تعاون ضرورت مند مریضوں کے لیے بلڈ، غریب طلباء کے لیے کتابیں اور راشن کا سبب بن سکتا ہے۔ تمام عطیات 100% امانت داری کے ساتھ مستحقین تک پہنچائے جاتے ہیں۔";
+                document.getElementById('d-box1-title').innerText = "ایزی پیسہ اکاؤنٹ";
+                document.getElementById('d-box1-desc').innerText = "عنوان: عبد الحنان (بانی)";
+                document.getElementById('d-box2-title').innerText = "ایچ بی ایل (HBL) بینک اکاؤنٹ";
+                document.getElementById('d-box2-desc').innerText = "حبیب بینک لمیٹڈ (HBL)";
+                document.getElementById('d-btn-text').innerText = "واٹس ایپ پر پیمنٹ کی رسید بھیجیں";
+
+                document.getElementById('lang-text').innerText = "English";
+                currentLang = 'ur';
+            } else {
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
