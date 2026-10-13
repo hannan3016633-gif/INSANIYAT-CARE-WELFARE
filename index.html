@@ -468,7 +468,6 @@
             font-weight: 700;
         }
 
-        /* Hidden Account Number Overlay */
         .acc-toggle-btn {
             background: var(--accent);
             color: var(--dark);
@@ -491,9 +490,8 @@
         }
 
         .acc-details-display {
-            display: none;
             margin-top: 1rem;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.5);
             padding: 0.8rem 1rem;
             border-radius: 12px;
             border: 1px dashed var(--accent);
@@ -876,7 +874,7 @@
             </div>
         </div>
 
-        <!-- Official Support & Donation Section with Hidden Touch Reveal -->
+        <!-- Official Support & Donation Section with Strict Dynamic Insertion -->
         <div class="donation-section" id="donation-section">
             <h2 id="d-title"><i class="fa-solid fa-hand-holding-dollar"></i> Support Our Cause (عطیات و تعاوُن)</h2>
             <p id="d-desc">Your small contribution can provide emergency blood, school books for poor students, and food for families in need. Touch below to view secure payment details.</p>
@@ -888,14 +886,11 @@
                     <h4 id="d-box1-title">EasyPaisa Account</h4>
                     <p id="d-box1-desc">Click below to reveal EasyPaisa number</p>
                     
-                    <button class="acc-toggle-btn" onclick="toggleAcc('easypaisa-info', this)">
+                    <button class="acc-toggle-btn" onclick="revealAccount('easypaisa', this)">
                         <i class="fa-solid fa-eye"></i> <span class="btn-lbl">Show EasyPaisa Account</span>
                     </button>
                     
-                    <div class="acc-details-display" id="easypaisa-info">
-                        <div class="acc-num">03008613306</div>
-                        <div class="acc-title">Title: Abdul Hannan</div>
-                    </div>
+                    <div id="easypaisa-holder"></div>
                 </div>
                 
                 <!-- HBL Bank Box -->
@@ -904,14 +899,11 @@
                     <h4 id="d-box2-title">HBL Bank Account</h4>
                     <p id="d-box2-desc">Click below to reveal HBL Bank details</p>
                     
-                    <button class="acc-toggle-btn" onclick="toggleAcc('hbl-info', this)">
+                    <button class="acc-toggle-btn" onclick="revealAccount('hbl', this)">
                         <i class="fa-solid fa-eye"></i> <span class="btn-lbl">Show Bank Details</span>
                     </button>
                     
-                    <div class="acc-details-display" id="hbl-info">
-                        <div class="acc-num">00005001749070</div>
-                        <div class="acc-title">Habib Bank Limited (HBL)</div>
-                    </div>
+                    <div id="hbl-holder"></div>
                 </div>
             </div>
 
@@ -999,19 +991,37 @@
 
     <!-- Interactive Scripts for Toggle Language & Reveal Accounts -->
     <script>
-        // Toggle Account Number Visibility on Click/Touch
-        function toggleAcc(id, btnElement) {
-            const accBox = document.getElementById(id);
+        // Strictly Hidden Data Dictionary
+        const accountData = {
+            easypaisa: {
+                number: "03008613306",
+                title: "Title: Abdul Hannan"
+            },
+            hbl: {
+                number: "00005001749070",
+                title: "Habib Bank Limited (HBL)"
+            }
+        };
+
+        // Reveal Function - Pure Dynamic DOM Creation
+        function revealAccount(type, btnElement) {
+            const holder = document.getElementById(type + '-holder');
             const btnLabel = btnElement.querySelector('.btn-lbl');
             const btnIcon = btnElement.querySelector('i');
 
-            if (accBox.style.display === "block") {
-                accBox.style.display = "none";
-                btnLabel.innerText = btnLabel.innerText.replace("Hide", "Show").replace("چھپائیں", "دیکھیں");
+            if (holder.innerHTML !== "") {
+                holder.innerHTML = "";
+                btnLabel.innerText = currentLang === 'ur' ? "ایزی پیسہ / بینک ڈیٹیل دیکھیں" : (type === 'easypaisa' ? "Show EasyPaisa Account" : "Show Bank Details");
                 btnIcon.className = "fa-solid fa-eye";
             } else {
-                accBox.style.display = "block";
-                btnLabel.innerText = btnLabel.innerText.replace("Show", "Hide").replace("دیکھیں", "چھپائیں");
+                const data = accountData[type];
+                holder.innerHTML = `
+                    <div class="acc-details-display">
+                        <div class="acc-num">${data.number}</div>
+                        <div class="acc-title">${data.title}</div>
+                    </div>
+                `;
+                btnLabel.innerText = currentLang === 'ur' ? "تفصیلات چھپائیں" : "Hide Details";
                 btnIcon.className = "fa-solid fa-eye-slash";
             }
         }
